@@ -4,4 +4,9 @@ $(function(){
         $(this).addClass('layui-nav-itemed')
     })
 
+    let isShow = 1;
+    if(isShow === 0){
+        $('#userManage').css('display','none')
+    }
+
 })

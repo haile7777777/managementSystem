@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="../css/layui.css"> -->
+    <link rel="stylesheet" href="../lib/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page_container">
+        <!-- 左侧导航栏 -->
+        <ul class="layui-nav layui-nav-tree layui-nav-side sidenav">
+            <div class="logo">
+                <img src="../images/logo_pic.png" class="logo_img">
+                <h1 class="logo_text">环保公司轻办公</h1>
+            </div>
+            <li class="layui-nav-item layui-nav-itemed"><a href="javascript:;" id="userManage">用户管理</a></li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">原料输入</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">数据录入</a></dd>
+                    <dd><a href="javascript:;">数据表格</a></dd>
+                    <dd><a href="javascript:;">数据折线</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">产品输出</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">数据录入</a></dd>
+                    <dd><a href="javascript:;">数据表格</a></dd>
+                    <dd><a href="javascript:;">数据折线</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">运输管理</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">车辆管理</a></dd>
+                    <dd><a href="javascript:;">运输数据</a></dd>
+                    <dd><a href="javascript:;">运输折线</a></dd>
+                </dl>
+            </li>
+            <input type="button" class="layui-btn logout" value="退出登录"></input>
+        </ul>
+
+        <!-- 右侧主体 -->
+        <div class="main">
+            <!-- 主题内容 -->
+            <div class="content">
+                <h1 class="page_title">用户管理</h1>
+                <div class="user-list">
+                    <table class="layui-table" lay-even lay-skin="nob row line" lay-size="lg">
+                        <colgroup>
+                            <col width="150">
+                            <col width="200">
+                            <col width="150">
+                            <col width="150">
+                            <col width="150">
+                            <col width="150">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>用户名</th>
+                                <th>手机</th>
+                                <th>激活用户</th>
+                                <th>设置权限</th>
+                                <th>删除用户</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>海乐</td>
+                                <td>13152411070</td>
+                                <td class="layui-form"><input type="checkbox" name="zzz" lay-skin="switch" lay-text="激活|拒绝"></td>
+                                <td class="layui-form"><input type="checkbox" name="zzz" lay-skin="switch" lay-text="普通|管理员"></td>
+                                <td><input type="button" class="layui-btn layui-btn-sm " style="background-color:rgb(233, 10, 10);border-radius: 5px"
+                                        value="删除用户"></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>海乐</td>
+                                <td>13152411070</td>
+                                <td class="layui-form"><input type="checkbox" name="zzz" lay-skin="switch" lay-text="激活|拒绝"></td>
+                                <td class="layui-form"><input type="checkbox" name="zzz" lay-skin="switch" lay-text="普通|管理员"></td>
+                                <td><input type="button" class="layui-btn layui-btn-sm" style="background-color:rgb(233, 10, 10);border-radius: 5px"
+                                        value="删除用户"></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>海乐</td>
+                                <td>13152411070</td>
+                                <td class="layui-form"><input type="checkbox" name="zzz" lay-skin="switch" lay-text="激活|拒绝"></td>
+                                <td class="layui-form"><input type="checkbox" name="zzz" lay-skin="switch" lay-text="普通|管理员"></td>
+                                <td><input type="button" class="layui-btn layui-btn-sm " style="background-color:rgb(233, 10, 10);border-radius: 5px"
+                                        value="删除用户"></td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>海乐</td>
+                                <td>13152411070</td>
+                                <td class="layui-form"><input type="checkbox" name="zzz" lay-skin="switch" lay-text="激活|拒绝"></td>
+                                <td class="layui-form"><input type="checkbox" name="zzz" lay-skin="switch" lay-text="普通|管理员"></td>
+                                <td><input type="button" class="layui-btn layui-btn-sm" style="background-color:rgb(233, 10, 10);border-radius: 5px"
+                                        value="删除用户"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- 页脚 -->
+            <footer>
+                <div class="footer_text">
+                    <span>©2014-2019 杭州宋小菜网络科技有限公司 版权所有</span>
+                    <span> 浙ICP备15009095号</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="../javascripts/jquery-1.12.2.js"></script>
+    <script src="../lib/layui/layui.all.js"></script>
+    <script src="../javascripts/common.js"></script>
+</body>
+
+</html>
